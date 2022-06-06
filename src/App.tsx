@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 import {Header} from "./Header/Header";
-
-
-//54:14
+import {MainBlock} from "./mainBlock/MainBlock";
+import {Skills} from "./Skills/Skills";
 
 function App() {
     return (
         <div className="App">
             <Header/>
+            <MainBlock/>
+            <Skills/>
         </div>
     );
 }

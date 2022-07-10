@@ -1,9 +1,9 @@
-.myWorkBlock {
+.myContactBlock {
     min-height: 100vh;
     background-color: coral;
 }
 
-.myWorkContainer {
+.contactContainer {
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -12,10 +12,11 @@
     background-color: #3effb1;
 }
 
-.works {
+.inputBox {
     border: 1px solid;
-    width: 100%;
+    width: 280px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
 }

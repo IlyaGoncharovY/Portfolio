@@ -1,0 +1,6 @@
+@import "src/common/styles/sass/variables";
+.personalInfoContainer {
+  color: $textColor;
+  font-family: $titleFontFamily;
+  flex-direction: column;
+}

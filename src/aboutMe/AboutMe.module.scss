@@ -1,0 +1,17 @@
+@import "src/common/styles/sass/variables";
+.aboutMe {
+    background-color: $bgColor;
+    .aboutMeContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        .titleContainer{
+           text-align: center;
+        }
+        .aboutMeBox{
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+        }
+    }
+}
+

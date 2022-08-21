@@ -1,20 +1,22 @@
 import React from 'react';
-import s from "./Contact.module.css"
+import s from "./Contact.module.scss"
 import styleContainer from "../common/styles/Contauner.module.css";
-import {SButton} from "../workOption/Button/SButton";
+import {Title} from "../common/components/title/Title";
 
 
 export const Contact = () => {
     return (
         <div className={s.myContactBlock}>
             <div className={`${styleContainer.container} ${s.contactContainer}`}>
-                <h2 className={s.title}> My Contacts</h2>
+                <Title title={"My contacts"}/>
                 <form className={s.inputBox}>
-                    <input/>
-                    <input/>
-                    <textarea/>
+                   <ul>
+                       <li>Address</li>
+                       <li>Email</li>
+                       <li>Telegram</li>
+                       <li>GitHub</li>
+                   </ul>
                 </form>
-                <SButton title={"Отправить"}/>
             </div>
         </div>
     );

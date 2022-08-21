@@ -1,0 +1,30 @@
+@import "src/common/styles/sass/variables";
+.mainBlock {
+    height: 100vh;
+    background-color: $bgColor;
+    justify-content: space-around;
+    .mainContainer {
+        justify-content: space-around;
+        .text {
+            width: 300px;
+            background-color: $bgSecondColor;
+        }
+    }
+    .photo {
+        width: 300px;
+        height: 400px;
+        //background-color: firebrick;
+        //display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        background-color: $primaryColor;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+}
+
+
+

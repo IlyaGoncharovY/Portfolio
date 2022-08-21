@@ -1,0 +1,19 @@
+@import "src/common/styles/sass/variables";
+.myContactBlock {
+    min-height: 200px;
+    background-color: $bgColor;
+    .contactContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .inputBox {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: $textColor;
+    }
+}
+

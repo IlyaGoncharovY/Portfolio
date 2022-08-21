@@ -23,6 +23,8 @@ export const MyProjects = () => {
                 <div className={s.works}>
                     <Project style={social} title={"social network"} description={"kak vk, tol`ko kruche"}/>
                     <Project style={wider} title={"counter"} description={"super puper counter"}/>
+                    <Project title={"todolist"} description={"super puper todolist"} style={social}/>
+                    <Project title={"test card"} description={"voobshe pushka"} style={social}/>
                 </div>
             </div>
         </div>

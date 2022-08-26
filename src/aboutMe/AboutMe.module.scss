@@ -1,6 +1,7 @@
 @import "src/common/styles/sass/variables";
 .aboutMe {
     background-color: $bgColor;
+    min-height: 100vh;
     .aboutMeContainer {
         flex-direction: column;
         justify-content: flex-start;

@@ -1,6 +1,6 @@
 @import "src/common/styles/sass/variables";
 .footerBlock {
-    height: 250px;
+    min-height: 100vh;
     background-color: $bgColor;
     .footerContainer {
         flex-direction: column;
@@ -17,7 +17,7 @@
                 align-items: center;
                 width: 30px;
                 height: 30px;
-                background-color: $primaryColor;
+                background-color: $bgColor;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;

@@ -27,8 +27,14 @@ export const MyFooter = () => {
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
                 <Title title={"Ilya Goncharov"}/>
                 <div className={s.boxContainer}>
-                    <div className={s.box}>
-                        
+                    <div className={s.box} style={telegram1}>
+
+                    </div>
+                    <div className={s.box} style={github1}>
+
+                    </div>
+                    <div className={s.box} style={linkedin1}>
+
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 @import "src/common/styles/sass/variables";
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $bgColor;
     justify-content: space-around;
     .mainContainer {

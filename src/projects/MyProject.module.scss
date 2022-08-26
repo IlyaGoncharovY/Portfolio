@@ -1,6 +1,7 @@
 @import "src/common/styles/sass/variables";
 
 .myWorkBlock {
+  min-height: 100vh;
   background-color: $bgColor;
 
   .myWorkContainer {

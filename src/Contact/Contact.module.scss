@@ -1,6 +1,6 @@
 @import "src/common/styles/sass/variables";
 .myContactBlock {
-    min-height: 200px;
+    min-height: 100vh;
     background-color: $bgColor;
     .contactContainer {
         flex-direction: column;

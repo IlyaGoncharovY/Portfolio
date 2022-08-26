@@ -7,17 +7,29 @@ import {Contact} from "./Contact/Contact";
 import {MyFooter} from "./Footer/MyFooter";
 import {MyProjects} from "./projects/MyProject";
 import {AboutMe} from "./aboutMe/AboutMe";
+import {Route, Routes} from "react-router-dom";
+
+export const PATH = {
+    MAIN: "/Portfolio",
+    ABOUT_ME: "/about_me",
+    SKILLS: "/skills",
+    PROJECTS: "/projects",
+    CONTACTS: "/contacts",
+    FOOTER: "/footer"
+}
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <MainBlock/>
-            <AboutMe/>
-            <Skills/>
-            <MyProjects/>
-            <Contact/>
-            <MyFooter/>
+            <Routes>
+                <Route path={PATH.MAIN} element={<MainBlock/>}/>
+                <Route path={PATH.ABOUT_ME} element={<AboutMe/>}/>
+                <Route path={PATH.SKILLS} element={<Skills/>}/>
+                <Route path={PATH.PROJECTS} element={<MyProjects/>}/>
+                <Route path={PATH.CONTACTS} element={<Contact/>}/>
+                <Route path={PATH.FOOTER} element={<MyFooter/>}/>
+            </Routes>
         </div>
     );
 }

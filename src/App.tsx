@@ -14,7 +14,7 @@ export const PATH = {
     ABOUT_ME: "/about_me",
     SKILLS: "/skills",
     PROJECTS: "/projects",
-    CONTACTS: "/contacts",
+    // CONTACTS: "/contacts",
     FOOTER: "/footer"
 }
 
@@ -27,7 +27,7 @@ function App() {
                 <Route path={PATH.ABOUT_ME} element={<AboutMe/>}/>
                 <Route path={PATH.SKILLS} element={<Skills/>}/>
                 <Route path={PATH.PROJECTS} element={<MyProjects/>}/>
-                <Route path={PATH.CONTACTS} element={<Contact/>}/>
+                {/*<Route path={PATH.CONTACTS} element={<Contact/>}/>*/}
                 <Route path={PATH.FOOTER} element={<MyFooter/>}/>
             </Routes>
         </div>

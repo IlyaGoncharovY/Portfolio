@@ -5,7 +5,6 @@ import {Title} from "../common/components/title/Title";
 import telegram from "../assects/image/telegram.png"
 import github from "../assects/image/github.png"
 import linkedin from "../assects/image/linkedin.png"
-import vkontakte from "../assects/image/1625751621_58-kartinkin-com-p-piksel-art-cherno-belii-art-krasivo-65.png"
 
 
 export const MyFooter = () => {
@@ -27,15 +26,18 @@ export const MyFooter = () => {
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
                 <Title title={"Ilya Goncharov"}/>
                 <div className={s.boxContainer}>
-                    <div className={s.box} style={telegram1}>
-
-                    </div>
-                    <div className={s.box} style={github1}>
-
-                    </div>
-                    <div className={s.box} style={linkedin1}>
-
-                    </div>
+                    <a href={"https://t.me/ilyaGoncharov93"}>
+                        <div className={s.box} style={telegram1}>
+                        </div>
+                    </a>
+                    <a href={"https://github.com/IlyaGoncharovY"}>
+                        <div className={s.box} style={github1}>
+                        </div>
+                    </a>
+                    <a href={"https://www.linkedin.com/feed/"}>
+                        <div className={s.box} style={linkedin1}>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

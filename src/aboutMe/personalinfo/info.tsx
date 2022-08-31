@@ -15,7 +15,6 @@ export const Info = () => {
                     <li>Address : Moscow</li>
                     <li>Phone : +79653080059</li>
                     <li>Email : goncharov.i93@mail.ru</li>
-                    <li> <a href={"https://t.me/ilyaGoncharov93"}>Telegram : ilyaGoncharov93</a></li>
                 </ul>
             </div>
         </div>

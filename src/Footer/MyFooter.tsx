@@ -2,9 +2,9 @@ import React from 'react';
 import s from "./MyFooter.module.scss"
 import styleContainer from "../common/styles/Contauner.module.css";
 import {Title} from "../common/components/title/Title";
-import telegram from "../assects/image/telegram.png"
+import telegram from "../assects/image/telegram111.png"
 import github from "../assects/image/github.png"
-import linkedin from "../assects/image/linkedin.png"
+import linkedin from "../assects/image/linkedin1.png"
 
 
 export const MyFooter = () => {

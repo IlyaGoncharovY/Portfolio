@@ -1,12 +1,18 @@
 @import "src/common/styles/sass/variables.scss";
+
 .header {
- background-color: $bgColor;
- display: flex;
- justify-content: flex-start;
- align-items: center;
- color: $textColor;
- @media screen and (min-width: 980px){
-  height: 80px;
-  justify-content: flex-end;
- }
+  background-color: $bgColor;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $textColor;
+  @media screen and (min-width: 980px) {
+    //background-color: $bgColor;
+    //display: flex;
+    //justify-content: flex-start;
+    align-items: center;
+    color: $textColor;
+    height: 60px;
+    justify-content: flex-end;
+  }
 }

@@ -1,0 +1,22 @@
+.educContainer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  //.about .resume-box li:after
+  .resume_box_li {
+    position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+    .text_ed {
+      opacity: .8;
+    }
+    ::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20px;
+      bottom: 0;
+      border-left: 1px solid #e7c824;
+    }
+  }
+}

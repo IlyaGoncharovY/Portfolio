@@ -16,8 +16,8 @@ export const MainBlock = () => {
                 <div className={s.photo} style={ilya1}></div>
                 <div className={s.text}>
                     <div className={s.textEl}>
-                        <h1>I am Ilya Goncharov</h1>
-                        <p>Frontend Developer.</p>
+                        <h1>- I am Ilya Goncharov.</h1>
+                        <h1 className={s.mainTitle}>Frontend Developer.</h1>
                         <p className={s.aboutText}>   Hello friend!
                             I am a novice front‑end developer specializing
                             in creating a user interface.

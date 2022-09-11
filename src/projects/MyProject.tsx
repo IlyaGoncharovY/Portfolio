@@ -19,7 +19,7 @@ export const MyProjects = () => {
     return (
         <div className={s.myWorkBlock}>
             <div className={`${styleContainer.container} ${s.myWorkContainer}`}>
-                <Title title={"Projects"}/>
+                <Title title={"Projects"} titleBg={"Works"}/>
                 <div className={s.works}>
                     <Project style={social} title={"social network"} description={"kak vk, tol`ko kruche"}/>
                     <Project style={wider} title={"counter"} description={"super puper counter"}/>

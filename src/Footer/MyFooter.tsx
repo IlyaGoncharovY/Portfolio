@@ -24,7 +24,7 @@ export const MyFooter = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <Title title={"Ilya Goncharov"}/>
+                <Title title={"Ilya Goncharov"} titleBg={"@Contact`s"}/>
                 <div className={s.boxContainer}>
                     <a href={"https://t.me/ilyaGoncharov93"}>
                         <div className={s.box} style={telegram1}>

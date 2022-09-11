@@ -11,7 +11,7 @@ export const AboutMe = () => {
         <div className={s.aboutMe}>
             <div className={`${styleContainer.container} ${s.aboutMeContainer}`}>
                 <div className={s.titleContainer}>
-                    <Title title={"About Me"}/>
+                    <Title title={"About Me"} titleBg={"Resume"}/>
                 </div>
                 <div className={s.aboutMeBox}>
                     <PersonalInfo/>

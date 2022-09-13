@@ -14,8 +14,8 @@ export const AboutMe = () => {
                     <Title title={"About Me"} titleBg={"Resume"}/>
                 </div>
                 <div className={s.aboutMeBox}>
-                    <PersonalInfo/>
-                    <TextInfo/>
+                    <PersonalInfo title={"Personal info"}/>
+                    <TextInfo title={"Education"}/>
                 </div>
             </div>
         </div>

@@ -3,8 +3,10 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgColor;
-  justify-content: space-around;
-
+  //justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .mainContainer {
     justify-content: space-around;
     //display: flex;

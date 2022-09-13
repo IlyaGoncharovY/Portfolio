@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Header} from "./Header/Header";
 import {MainBlock} from "./mainBlock/MainBlock";
@@ -19,6 +19,8 @@ export const PATH = {
 }
 
 function App() {
+
+
     return (
         <div className="App">
             <Header/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import s from "./Main.module.scss"
 import styleContainer from "../common/styles/Contauner.module.css"
+import showModule from "../common/styles/showLeft.module.scss"
 import ilya from "../assects/image/ilya.jpg";
 
 

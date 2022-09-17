@@ -1,5 +1,5 @@
 @import "src/common/styles/sass/variables.scss";
-.skill {
+  .skill {
     width: 250px;
     background-color: gold;
     display: flex;
@@ -8,21 +8,25 @@
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+
     .icon {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 200px;
-        background-color: $primaryColor;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      background-color: $primaryColor;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
     }
+
     .description {
 
     }
-}
+  }
+
+
 
 
 

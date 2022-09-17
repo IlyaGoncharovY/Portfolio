@@ -6,6 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
+  animation: showLeft 1s;
+  z-index: 1;
+
+@keyframes showLeft {
+  from {left:-100%;}
+  to {left:0;}
+}
   @media screen and (max-width: 414px) {
     padding-bottom: 50px;
   }

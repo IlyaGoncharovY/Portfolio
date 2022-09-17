@@ -1,0 +1,10 @@
+.showLeft{
+  position: relative;
+  animation: showLeft 1s;
+  z-index: 1;
+
+  @keyframes showLeft {
+    from {left:-100%;}
+    to {left:0;}
+  }
+}

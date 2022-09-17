@@ -1,0 +1,21 @@
+@import "src/common/styles/sass/variables";
+
+.boxContainer {
+  margin-top: 30px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .box {
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: $bgColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+}

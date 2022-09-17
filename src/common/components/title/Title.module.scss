@@ -19,16 +19,19 @@
   .titleBg {
     text-align: center;
     font-size: 80px;
-    left: 0;
     letter-spacing: 10px;
     line-height: 0.7;
     position: absolute;
-    right: 50%;
+    left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-weight: 800;
-    transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.07);
+
+    @media screen and(max-width: 767px) {
+      font-size: 62px;
+    }
   }
 
   &::before {

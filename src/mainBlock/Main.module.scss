@@ -3,24 +3,26 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgColor;
-  //justify-content: space-around;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 414px) {
+    padding-bottom: 50px;
+  }
   .mainContainer {
     justify-content: space-around;
-    //display: flex;
     flex-wrap: wrap;
 
     .text {
       width: 300px;
-      //background-color: $bgSecondColor;
       color: gold;
       flex: auto;
 
       .textEl {
         margin: 10px;
-        padding: 30px;
+        @media screen and (min-width: 414px) {
+          padding: 30px;
+        }
 
         .mainTitle {
           color: white;
@@ -30,7 +32,6 @@
           padding-top: 10px;
           padding-bottom: 30px;
           color: white;
-          //background-color: red;
           width: 100%;
           height: 100px;
           margin: auto;

@@ -5,26 +5,65 @@
     .footerContainer {
         flex-direction: column;
         flex-wrap: nowrap;
-        .boxContainer {
-            margin-top: 30px;
-            width: 280px;
+        .formContainer {
+            align-items: stretch;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            .box {
-                justify-content: center;
-                align-items: center;
-                width: 60px;
-                height: 60px;
-                background-color: $bgColor;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                position: relative;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            margin-top: 30px;
+            width: 500px;
+            @media screen and (max-width: 690px) {
+                width: 90%;
             }
+            .label {
+                color: $textColor;
+            }
+            .inputForm {
+                background: #252527;
+                box-sizing: border-box;
+                color: $textColor;
+                font-family: Poppins,sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-bottom: 1.2rem;
+                outline: none;
+            }
+            .buttonForm {
+                align-items: center;
+                align-self: center;
+                background-color: transparent;
+                color: $textColor;
+                font-size: 14px;
+                letter-spacing: 1px;
+                margin-top: 30px;
+                max-width: 160px;
+                padding: 8px 20px;
+                text-transform: uppercase;
+                width: 100%;
         }
     }
+    .boxContainer {
+        margin-top: 30px;
+        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .box {
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: $bgColor;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+    }
+}
 }
 
 

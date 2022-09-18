@@ -1,23 +1,18 @@
 import React from 'react';
 import s from "./Skill.module.scss"
+import {Icon} from "@iconify/react";
 
 
 type SkillType = {
     title: string
-    description: string
-    style: styleType
-}
-
-type styleType = {
-    backgroundImage: string
+    iconValue: string
 }
 
 export const Skill = (props: SkillType) => {
     return (
-            <div className={s.skill}>
-                <div className={s.icon} style={props.style}></div>
-                <h3>{props.title}</h3>
-                <span className={s.description}>{props.description}</span>
+        <div className={s.skill}>
+            <Icon className={s.icon} icon={props.iconValue}/>
+            <h3 className={s.title}>{props.title}</h3>
         </div>
 
     );

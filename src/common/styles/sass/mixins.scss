@@ -6,3 +6,13 @@
   line-height: $line-height;
   color: $textColor;
 }
+
+@mixin showLeft($position, $animation, $z-index) {
+  position: $position;
+  animation: showLeft $animation;
+  z-index: $z-index;
+  @keyframes showLeft {
+    from {left:-100%;}
+    to {left:0;}
+  }
+}

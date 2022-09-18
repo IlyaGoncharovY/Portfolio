@@ -1,16 +1,17 @@
+@import "src/common/styles/sass/mixins";
+
 .textInfoContainer {
   -ms-flex: 0 0 50%;
-  //flex: 0 0 50%;
-  //max-width: 50%;
   position: relative;
   width: 100%;
-  //padding-right: 15px;
-  //padding-left: 15px;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   color: #fff;
   font-weight: 500;
   line-height: 1.6;
+
+  @include showLeft("", 2s, 1);
+
   @media screen and (min-width: 544px) {
     max-width: 50%;
     padding-right: 15px;

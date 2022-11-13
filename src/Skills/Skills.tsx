@@ -9,7 +9,7 @@ export const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <Title title={"Skills"} titleBg={"Tech"}/>
+                <Title title={"Skills"} titleBg={"ability"}/>
                 <div className={s.skills}>
                     <Skill title={"React"} iconValue={"vscode-icons:file-type-reactts"}/>
                     <Skill title={"Redux"} iconValue={"logos:redux"}/>

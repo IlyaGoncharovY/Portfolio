@@ -12,7 +12,8 @@
   @media screen and (max-width: 414px) {
     padding-bottom: 50px;
   }
-  .colorBlock{
+
+  .colorBlock {
     background-color: #ffb400;
     position: fixed;
     height: 200%;
@@ -22,6 +23,7 @@
     top: -50%;
     opacity: 0.5;
   }
+
   .mainContainer {
     justify-content: space-around;
     flex-wrap: wrap;

@@ -21,9 +21,9 @@ export const MyProjects = () => {
             <div className={`${styleContainer.container} ${s.myWorkContainer}`}>
                 <Title title={"Projects"} titleBg={"Works"}/>
                 <div className={s.works}>
-                    <Project link={"https://ilyagoncharovy.github.io/fridays-project/"} title={"todolist"} description={"ability to create and edit tasks"} style={social}/>
-                    <Project link={""} style={wider} title={"Learn card"} description={"working with maps for training, in any field"}/>
-                    <Project link={""} style={social} title={"social network"} description={"social network, training project"}/>
+                    <Project url={``} style={social} title={"todolist"} description={"ability to create and edit tasks"} />
+                    <Project url={`https://ilyagoncharovy.github.io/fridays-project/`} style={wider} title={"Learn card"} description={"working with maps for training, in any field"}/>
+                    <Project url={""} style={social} title={"social network"} description={"social network, training project"}/>
                 </div>
             </div>
         </div>

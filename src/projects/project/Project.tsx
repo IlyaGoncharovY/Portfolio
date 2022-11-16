@@ -4,10 +4,10 @@ import Fade from "react-awesome-reveal";
 
 
 type WorkType = {
+    url: string
+    style: styleType
     title: string
     description: string
-    style: styleType
-    link: string
 }
 
 type styleType = {
@@ -19,7 +19,7 @@ export const Project = (props: WorkType) => {
         <Fade>
             <div className={s.project}>
                 <div className={s.icon} style={props.style}>
-                    <a href={props.link} className={s.buttonProject}>Смотреть</a>
+                    <a href={props.url} className={s.buttonProject}>Смотреть</a>
                 </div>
                 <div className={s.projectInfo}>
                     <h3 className={s.projectTitle}>{props.title}</h3>

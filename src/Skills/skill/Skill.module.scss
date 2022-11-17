@@ -20,6 +20,13 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+    &:hover {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
   }
 
   .title {

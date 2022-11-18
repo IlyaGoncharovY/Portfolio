@@ -21,16 +21,51 @@
     }
 
     .I {
-      width: 40px;
-      height: 40px;
-      list-style: none;
       display: flex;
-      justify-content: center;
-      align-content: flex-start;
-      align-items: center;
       margin: 20px 0;
-      border-radius: 50%;
-      background: gold;
+
+      .bodyIcon {
+        display: inline-block;
+        background: #FFD583;
+        border-radius: 10px;
+
+        .linkA {
+          display: block;
+          padding: 10px 20px;
+          color: #6087B8;
+          position: relative;
+          z-index: 2;
+
+          .bodyIconChild {
+            position: absolute;
+            display: block;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #6087B8;
+            z-index: 1;
+            overflow: hidden;
+            transition: .8s all ease;
+            border-radius: 10px;
+
+            .spanEl {
+              position: absolute;
+              color: #FFD583;
+              width: 123px;
+              top: 0;
+              left: 0;
+              display: block;
+              height: 100%;
+              padding: 10px 0 0 10px;
+            }
+          }
+        }
+      }
+
+      .bodyIcon :hover .bodyIconChild {
+        width: 100%;
+      }
     }
   }
 }

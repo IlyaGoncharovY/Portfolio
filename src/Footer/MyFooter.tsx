@@ -1,44 +1,60 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from "./MyFooter.module.scss"
 import styleContainer from "../common/styles/Contauner.module.css";
 import {Title} from "../common/components/title/Title";
 import {useFormik} from "formik";
 import {Social} from "../common/components/Social/Social";
+import * as emailjs from 'emailjs-com';
+import Swal from "sweetalert2";
+import * as yup from 'yup';
 
-type ValuesType = {
-    name?: string;
-    email?: string;
-    message?: string;
-}
-
+const serviceID = "service_lngxx9k"
+const templateID = "template_mvzunqb"
+const userID = "fja6XHP7FsoUigGZo"
 
 export const MyFooter = () => {
 
+    const [buttonState, setButtonState] = useState<string>('Send Message');
+
     const formik = useFormik({
         initialValues: {
-            name: '',
-            email: '',
-            message: '',
+            from_name: '',
+            to_name: "Ilya",
+            reply_to: '',
+            message: '' ,
         },
-        onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
-            formik.resetForm()
-        },
-        validate: (values) => {
-            const errors: ValuesType = {}
-
-            if (!values.email) {
-                errors.email = 'required'
-            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-                errors.email = 'Invalid email address';
+        onSubmit: (values) => {
+             // alert(JSON.stringify(values, null, 2));
+            try{
+                emailjs.send(serviceID , templateID, values, userID)
+                    .then(() => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'your message has been sent',
+                            timer: 1500
+                        })
+                        setButtonState('Send Email');
+                       formik.setSubmitting(false);
+                       formik.resetForm();
+                    });
             }
-
-            if (values.message.length < 2) {
-                errors.message = 'message must be more two symbols'
+            catch {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                })
+                setButtonState('Send Email');
+                formik.setSubmitting(false);
             }
-
-            return errors
         },
+        validationSchema: yup.object({
+            from_name: yup.string()
+                .required('* Name field is required'),
+            reply_to: yup.string().email('Invalid email address')
+                .required('* Email field is required'),
+            message: yup.string().required('* Message field is required')
+        })
     });
 
     return (
@@ -48,25 +64,25 @@ export const MyFooter = () => {
                 <form onSubmit={formik.handleSubmit} className={s.formContainer}>
                     <label htmlFor="Name" className={s.label}>Name</label>
                     <input
-                        id="name"
-                        name="name"
+                        id="from_name"
+                        name="from_name"
                         type="text"
                         onChange={formik.handleChange}
-                        value={formik.values.name}
+                        value={formik.values.from_name}
                         className={s.inputForm}
                     />
 
                     <label htmlFor="Email" className={s.label}>Email</label>
                     <input
-                        id="email"
-                        name="email"
+                        id="reply_to"
+                        name="reply_to"
                         type="email"
                         onChange={formik.handleChange}
-                        value={formik.values.email}
+                        value={formik.values.reply_to}
                         className={s.inputForm}
                     />
-                    {formik.touched.email && formik.errors.email &&
-                        <div style={{color: 'red', opacity: 0.8}}>{formik.errors.email}</div>}
+                    {formik.touched.reply_to && formik.errors.reply_to &&
+                        <div style={{color: 'red', opacity: 0.8}}>{formik.errors.reply_to}</div>}
 
                     <label htmlFor="Message" className={s.label}>Message</label>
                     <textarea
@@ -79,7 +95,10 @@ export const MyFooter = () => {
                     {formik.touched.message && formik.errors.message &&
                         <div style={{color: 'red', opacity: 0.8}}>{formik.errors.message}</div>}
 
-                    <button type="submit" className={s.buttonForm}>Submit</button>
+                    <button type="submit" className={s.buttonForm}>
+                        {/*Submit*/}
+                        {buttonState}
+                    </button>
                 </form>
                 <Social/>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./PersonalInfo.module.scss"
-import {Info} from "./info";
+import {Info} from "./Info/info";
 
 type PersonalInfoType = {
     title: string

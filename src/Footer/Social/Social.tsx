@@ -1,8 +1,8 @@
 import s from "./social.module.scss";
 import React from 'react';
-import telegram from "../../../assects/image/telegram111.png";
-import github from "../../../assects/image/github.png";
-import linkedin from "../../../assects/image/linkedin1.png";
+import telegram from "../../assects/image/telegram111.png";
+import github from "../../assects/image/github.png";
+import linkedin from "../../assects/image/linkedin1.png";
 
 
 

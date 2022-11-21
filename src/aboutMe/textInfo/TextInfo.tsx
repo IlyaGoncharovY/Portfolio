@@ -1,6 +1,7 @@
 import React from 'react';
 import s from "./TextInfo.module.scss"
-import {Education} from "../personalinfo/Education";
+import {Education} from "./Education/Education";
+
 
 type TextInfoType = {
     title: string

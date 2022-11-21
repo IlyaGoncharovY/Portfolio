@@ -12,7 +12,6 @@ export const MainBlock = () => {
 
     return (
         <div className={s.mainBlock}>
-            {/*<ParticlesComponent/>*/}
             <div className={s.colorBlock}/>
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <Tilt>

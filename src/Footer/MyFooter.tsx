@@ -3,7 +3,7 @@ import s from "./MyFooter.module.scss"
 import styleContainer from "../common/styles/Contauner.module.css";
 import {Title} from "../common/components/title/Title";
 import {useFormik} from "formik";
-import {Social} from "../common/components/Social/Social";
+import {Social} from "./Social/Social";
 import * as emailjs from 'emailjs-com';
 import Swal from "sweetalert2";
 import * as yup from 'yup';
@@ -95,7 +95,7 @@ export const MyFooter = () => {
                     {formik.touched.message && formik.errors.message &&
                         <div style={{color: 'red', opacity: 0.8}}>{formik.errors.message}</div>}
 
-                    <button type="submit" className={s.buttonForm}>
+                    <button type="submit" className={formik.isSubmitting ? s.buttonDisabled : s.buttonForm} disabled={formik.isSubmitting}>
                         {/*Submit*/}
                         {buttonState}
                     </button>

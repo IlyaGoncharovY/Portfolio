@@ -24,7 +24,6 @@ export const MyFooter = () => {
             message: '' ,
         },
         onSubmit: (values) => {
-             // alert(JSON.stringify(values, null, 2));
             try{
                 emailjs.send(serviceID , templateID, values, userID)
                     .then(() => {

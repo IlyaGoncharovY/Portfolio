@@ -4,17 +4,22 @@ import styleContainer from "../common/styles/Contauner.module.css";
 import {Title} from "../common/components/title/Title";
 import {Project} from "./project/Project";
 import socialImage from "../assects/image/social1.png"
-import weiderImage from "../assects/image/mini-dart-vader.png"
+import cardImg from "../assects/image/cardImg.png"
+import todoImg from "../assects/image/todoImg.png"
 
 export const MyProjects = () => {
 
     const social = {
         backgroundImage: 'url(' + socialImage + ')',
     };
-//2:00
-    const wider = {
-        backgroundImage: 'url(' + weiderImage + ')',
+
+    const cardImage = {
+        backgroundImage: 'url(' + cardImg + ')',
     };
+
+    const todolistImg = {
+        backgroundImage: 'url(' + todoImg + ')'
+    }
 
     return (
         <div className={s.myWorkBlock}>
@@ -22,10 +27,10 @@ export const MyProjects = () => {
                 <Title title={"Projects"} titleBg={"Works"}/>
                 <div className={s.works}>
                         <Project url={`https://ilyagoncharovy.github.io/todolist-ts/`}
-                                 style={social} title={"todolist"}
+                                 style={todolistImg} title={"todolist"}
                                  description={"ability to create and edit tasks"}/>
                         <Project url={`https://ilyagoncharovy.github.io/fridays-project/`}
-                                 style={wider} title={"Learn card"}
+                                 style={cardImage} title={"Learn card"}
                                  description={"working with maps for training, in any field"}/>
                         <Project url={"https://ilyagoncharovy.github.io/SocialNetworkHomeWork/"}
                                  style={social} title={"social network"}

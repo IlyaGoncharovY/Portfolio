@@ -53,8 +53,7 @@
           height: 100px;
           margin: auto;
           font-size: larger;
-          font-family: 'Open Sans', sans-serif;
-
+          @include text($titleFontFamily, 18px, 1.2);
           @include showLeft(relative, 2s, 1)
         }
       }

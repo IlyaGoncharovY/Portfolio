@@ -19,7 +19,7 @@ export const Project = (props: WorkType) => {
         <Fade>
             <div className={s.project}>
                 <div className={s.icon} style={props.style}>
-                    <a href={props.url} className={s.buttonProject}>DEMO</a>
+                    <a href={props.url} className={s.buttonProject} target={"_blank"}>DEMO</a>
                 </div>
                 <div className={s.projectInfo}>
                     <h3 className={s.projectTitle}>{props.title}</h3>

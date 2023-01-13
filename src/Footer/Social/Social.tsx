@@ -28,7 +28,7 @@ export const Social = () => {
                 <div className={s.box} style={github1}>
                 </div>
             </a>
-            <a href={"https://www.linkedin.com/feed/"}>
+            <a href={"https://www.linkedin.com/in/ilyagoncharovy/"}>
                 <div className={s.box} style={linkedin1}>
                 </div>
             </a>

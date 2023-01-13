@@ -56,6 +56,19 @@
           @include text($titleFontFamily, 18px, 1.2);
           @include showLeft(relative, 2s, 1)
         }
+        .button {
+          padding: 15px 40px;
+          border-radius: 10px;
+          position: relative;
+          background-color: #1e2128;
+          outline: none;
+          border: 1px solid white;
+          cursor: pointer;
+          margin-top: 40px;
+          transition: all 0.3s ease-in-out 0s;
+          color: white;
+          @include text($titleFontFamily, 18px, 1.2);
+        }
       }
     }
   }

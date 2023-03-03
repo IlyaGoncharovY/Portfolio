@@ -7,6 +7,8 @@ import {MyFooter} from "./Footer/MyFooter";
 import {MyProjects} from "./projects/MyProject";
 import {AboutMe} from "./aboutMe/AboutMe";
 import {Route, Routes} from "react-router-dom";
+import {Projects, SkillSet} from "./common/data/dataSet"
+
 
 export const PATH = {
     MAIN: "/Portfolio",
@@ -26,9 +28,8 @@ function App() {
             <Routes>
                 <Route path={PATH.MAIN} element={<MainBlock/>}/>
                 <Route path={PATH.ABOUT_ME} element={<AboutMe/>}/>
-                <Route path={PATH.SKILLS} element={<Skills/>}/>
-                <Route path={PATH.PROJECTS} element={<MyProjects/>}/>
-                {/*<Route path={PATH.CONTACTS} element={<Contact/>}/>*/}
+                <Route path={PATH.SKILLS} element={<Skills skill={SkillSet}/>}/>
+                <Route path={PATH.PROJECTS} element={<MyProjects project={Projects}/>}/>
                 <Route path={PATH.FOOTER} element={<MyFooter/>}/>
             </Routes>
         </div>

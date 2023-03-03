@@ -69,6 +69,7 @@ export const MyFooter = () => {
                         onChange={formik.handleChange}
                         value={formik.values.from_name}
                         className={s.inputForm}
+                        style={{padding: "10px", fontSize: "20px"}}
                     />
 
                     <label htmlFor="Email" className={s.label}>Email</label>
@@ -79,6 +80,7 @@ export const MyFooter = () => {
                         onChange={formik.handleChange}
                         value={formik.values.reply_to}
                         className={s.inputForm}
+                        style={{padding: "10px", fontSize: "20px"}}
                     />
                     {formik.touched.reply_to && formik.errors.reply_to &&
                         <div style={{color: 'red', opacity: 0.8}}>{formik.errors.reply_to}</div>}
@@ -90,6 +92,7 @@ export const MyFooter = () => {
                         onChange={formik.handleChange}
                         value={formik.values.message}
                         className={s.inputForm}
+                        style={{padding: "10px", fontSize: "20px"}}
                     />
                     {formik.touched.message && formik.errors.message &&
                         <div style={{color: 'red', opacity: 0.8}}>{formik.errors.message}</div>}

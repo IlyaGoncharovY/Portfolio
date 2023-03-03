@@ -16,8 +16,9 @@ export const Skills = (props: MySkillsType) => {
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <Title title={"Skills"} titleBg={"ability"}/>
                 <div className={s.skills}>
-                    {props.skill.map(el =>
+                    {props.skill.map((el, index) =>
                         <Skill
+                            key={index}
                             title={el.title}
                             iconValue={el.iconValue}
                         />)}

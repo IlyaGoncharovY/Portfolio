@@ -104,7 +104,7 @@ export const MyFooter = () => {
                     </button>
                 </form>
                 <div className={s.socialBlock}>
-                    {SocialSet.map(el => <Social href={el.href} style={el.style}/>)}
+                    {SocialSet.map((el,index) => <Social key={index} href={el.href} style={el.style}/>)}
                 </div>
             </div>
         </div>

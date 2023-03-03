@@ -16,8 +16,9 @@ export const MyProjects = (props: MyProjectsType) => {
             <div className={`${styleContainer.container} ${s.myWorkContainer}`}>
                 <Title title={"Projects"} titleBg={"Works"}/>
                 <div className={s.works}>
-                    {props.project.map(el =>
-                        <Project url={el.url}
+                    {props.project.map((el, index) =>
+                        <Project key={index}
+                                 url={el.url}
                                  style={el.style}
                                  title={el.title}
                                  description={el.description}

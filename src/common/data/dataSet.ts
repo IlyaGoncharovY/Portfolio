@@ -1,7 +1,4 @@
-import todoImg from "../../assects/image/todoImg.png";
-import cardImg from "../../assects/image/cardImg.png";
-import socialImage from "../../assects/image/social1.png";
-import chat from "../../assects/image/chat.png";
+import {cardImage, chatImg, github1, linkedin1, social, telegram1, todolistImg} from "./urlImg";
 
 export type ProjectsType = {
     title: string
@@ -15,21 +12,11 @@ export type SkillSetType = {
     iconValue: string
 }
 
-const todolistImg = {
-    backgroundImage: 'url(' + todoImg + ')'
+export type SocialSetType = {
+    href: string
+    style: { backgroundImage: string; }
 }
 
-const cardImage = {
-    backgroundImage: 'url(' + cardImg + ')',
-};
-
-const social = {
-    backgroundImage: 'url(' + socialImage + ')',
-};
-
-const chatImg = {
-    backgroundImage: `url(` + chat + `)`
-}
 
 export const Projects: ProjectsType[] = [
     {
@@ -72,3 +59,8 @@ export const SkillSet: SkillSetType[] = [
     {title: "Icon-ify", iconValue: "simple-icons:iconify"}
 ]
 
+export const SocialSet: SocialSetType[] = [
+    {href: "https://t.me/ilyaGoncharov93", style: telegram1},
+    {href: "https://github.com/IlyaGoncharovY", style: github1},
+    {href: "https://www.linkedin.com/in/ilyagoncharovy/", style: linkedin1},
+]

@@ -1,4 +1,4 @@
-import {cardImage, chatImg, github1, linkedin1, social, telegram1, todolistImg} from "./urlImg";
+import {cardImage, chatImg, github1, JSONLogo1, linkedin1, social, telegram1, todolistImg} from "./urlImg";
 
 export type ProjectsType = {
     title: string
@@ -43,6 +43,12 @@ export const Projects: ProjectsType[] = [
         url: "https://github.com/IlyaGoncharovY/my-chat",
         style: chatImg
     },
+    {
+        title:"Posts {JSON}",
+        description: "implementation of the JSON api",
+        url: "https://IlyaGoncharovY.github.io/Posts",
+        style: JSONLogo1
+    }
 ]
 
 export const SkillSet: SkillSetType[] = [

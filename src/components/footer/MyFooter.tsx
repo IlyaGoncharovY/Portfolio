@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import s from "./MyFooter.module.scss"
-import styleContainer from "../common/styles/Contauner.module.css";
-import {Title} from "../common/components/title/Title";
+import styleContainer from "../../common/styles/Contauner.module.css";
+import {Title} from "../../common/components/title/Title";
 import {useFormik} from "formik";
 import {Social} from "./Social/Social";
 import * as emailjs from 'emailjs-com';
 import Swal from "sweetalert2";
 import * as yup from 'yup';
-import {SocialSet} from "../common/data/dataSet";
+import {SocialSet} from "../../common/data/dataSet";
 
 const serviceID = "service_lngxx9k"
 const templateID = "template_mvzunqb"

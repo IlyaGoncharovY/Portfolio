@@ -1,10 +1,10 @@
 import React from 'react';
 import s from "./Main.module.scss"
-import styleContainer from "../common/styles/Contauner.module.css"
-import ilya from "../assects/image/ilya.jpg";
+import styleContainer from "../../common/styles/Contauner.module.css"
+import ilya from "../../assects/image/ilya.jpg";
 import Tilt from 'react-parallax-tilt';
 // @ts-ignore
-import cv from "../assects/CV/CvIlya.pdf"
+import cv from "../../assects/CV/CvIlya.pdf"
 
 export const MainBlock = () => {
 

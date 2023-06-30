@@ -1,10 +1,10 @@
-@import "src/common/styles/sass/mixins";
+@import "../../../common/styles/sass/mixins";
 
 .textInfoContainer {
   -ms-flex: 0 0 50%;
   position: relative;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: $titleFontFamily;
   font-size: 15px;
   color: #fff;
   font-weight: 500;

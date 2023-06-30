@@ -1,9 +1,9 @@
 import React from 'react';
 import s from "./Skills.module.scss"
-import styleContainer from "../../src/common/styles/Contauner.module.css"
+import styleContainer from "../../common/styles/Contauner.module.css"
 import {Skill} from "./skill/Skill";
-import {Title} from "../common/components/title/Title";
-import {SkillSetType} from "../common/data/dataSet";
+import {Title} from "../../common/components/title/Title";
+import {SkillSetType} from "../../common/data/dataSet";
 
 type MySkillsType = {
     skill: SkillSetType[]

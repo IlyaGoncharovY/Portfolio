@@ -1,6 +1,6 @@
 import s from "./social.module.scss";
 import React from 'react';
-import {SocialSetType} from "../../common/data/dataSet";
+import {SocialSetType} from "../../../common/data/dataSet";
 
 export const Social = (props: SocialSetType) => {
 

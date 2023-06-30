@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import {Header} from "./Header/Header";
-import {MainBlock} from "./mainBlock/MainBlock";
-import {Skills} from "./Skills/Skills";
-import {MyFooter} from "./Footer/MyFooter";
-import {MyProjects} from "./projects/MyProject";
-import {AboutMe} from "./aboutMe/AboutMe";
+import {Header} from "./components/header/Header";
+import {MainBlock} from "./components/mainBlock/MainBlock";
+import {Skills} from "./components/skills/Skills";
+import {MyFooter} from "./components/footer/MyFooter";
+import {MyProjects} from "./components/projects/MyProject";
+import {AboutMe} from "./components/aboutMe/AboutMe";
 import {Route, Routes} from "react-router-dom";
 import {Projects, SkillSet} from "./common/data/dataSet"
 

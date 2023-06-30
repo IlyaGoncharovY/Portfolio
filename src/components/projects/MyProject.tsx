@@ -1,9 +1,9 @@
 import React from 'react';
 import s from "./MyProject.module.scss"
-import styleContainer from "../common/styles/Contauner.module.css";
-import {Title} from "../common/components/title/Title";
+import styleContainer from "../../common/styles/Contauner.module.css";
+import {Title} from "../../common/components/title/Title";
 import {Project} from "./project/Project";
-import {ProjectsType} from "../common/data/dataSet";
+import {ProjectsType} from "../../common/data/dataSet";
 
 type MyProjectsType = {
     project: ProjectsType[]

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from "./AboutMe.module.scss"
-import styleContainer from "../common/styles/Contauner.module.css";
-import {Title} from "../common/components/title/Title";
+import styleContainer from "../../common/styles/Contauner.module.css";
+import {Title} from "../../common/components/title/Title";
 import {PersonalInfo} from "./personalinfo/PersonalInfo";
 import {TextInfo} from "./textInfo/TextInfo";
 

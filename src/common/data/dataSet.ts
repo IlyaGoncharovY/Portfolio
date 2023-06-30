@@ -17,6 +17,11 @@ export type SocialSetType = {
     style: { backgroundImage: string; }
 }
 
+export type CommonSetType = {
+    title: string
+    description: string
+}
+
 
 export const Projects: ProjectsType[] = [
     {
@@ -44,7 +49,7 @@ export const Projects: ProjectsType[] = [
         style: chatImg
     },
     {
-        title:"Posts {JSON}",
+        title: "Posts {JSON}",
         description: "implementation of the JSON api",
         url: "https://IlyaGoncharovY.github.io/Posts",
         style: JSONLogo1
@@ -69,4 +74,31 @@ export const SocialSet: SocialSetType[] = [
     {href: "https://t.me/ilyaGoncharov93", style: telegram1},
     {href: "https://github.com/IlyaGoncharovY", style: github1},
     {href: "https://www.linkedin.com/in/ilyagoncharovy/", style: linkedin1},
+]
+
+export const EducationSet: CommonSetType[] = [
+    {
+        title: "IT-Incubator",
+        description: "Profession: Front-end developer."
+    },
+    {
+        title: "Moscow University of Finance and Industry",
+        description: "Profession: Infocommunication technologies and communication systems."
+    },
+    {
+        title: "College of Communication No. 54",
+        description: "Profession: Communication equipment maintenance technician."
+    }
+]
+
+export const InfoLeftSet: CommonSetType[] = [
+    {title: "First Name :", description: "Ilya"},
+    {title: "Last Name :", description: "Goncharov"},
+    {title: "Age :", description: "30 Years"}
+]
+
+export const InfoRightSet: CommonSetType[] = [
+    {title: "Address :", description: "Moscow"},
+    {title: "Phone :", description: "+79653080059"},
+    {title: "Email:", description: "goncharov.i93@mail.ru"}
 ]

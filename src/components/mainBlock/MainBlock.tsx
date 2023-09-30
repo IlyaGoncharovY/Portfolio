@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import s from "./Main.module.scss"
 import styleContainer from "../../common/styles/Contauner.module.css"
 import ilya from "../../assects/image/ilya.jpg";

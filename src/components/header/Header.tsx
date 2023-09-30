@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from "./Header.module.scss"
 import {Navigation} from "../navigation/Navigation";
 

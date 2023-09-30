@@ -1,4 +1,14 @@
-import {cardImage, chatImg, github1, JSONLogo1, linkedin1, social, telegram1, todolistImg} from "./urlImg";
+import {
+    calendarAppImg,
+    cardImage,
+    chatImg,
+    github1,
+    JSONLogo1,
+    linkedin1,
+    social,
+    telegram1,
+    todolistImg
+} from "./urlImg";
 
 export type ProjectsType = {
     title: string
@@ -53,6 +63,12 @@ export const Projects: ProjectsType[] = [
         description: "implementation of the JSON api",
         url: "https://IlyaGoncharovY.github.io/Posts",
         style: JSONLogo1
+    },
+    {
+        title: "Calendar-app",
+        description: "calendar for tasks",
+        url: "https://github.com/IlyaGoncharovY/calendar-app",
+        style: calendarAppImg
     }
 ]
 

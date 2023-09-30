@@ -1,6 +1,7 @@
 import React from 'react';
 import s from "./Education.module.scss"
 import {EducationSet} from "../../../../common/data/dataSet";
+
 export const Education = () => {
     return (
         <div>

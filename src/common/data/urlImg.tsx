@@ -6,6 +6,7 @@ import telegram from "../../assects/image/telegram111.png";
 import github from "../../assects/image/github.png";
 import linkedin from "../../assects/image/linkedin1.png";
 import JSONPlaseHolderImg from "../../assects/image/JSONLogo.png"
+import calendarImage from "../../assects/image/calendarImg.png"
 
 export const todolistImg = {
     backgroundImage: `url(${todoImg})`
@@ -37,4 +38,8 @@ export const linkedin1 = {
 
 export const JSONLogo1 = {
     backgroundImage: `url(${JSONPlaseHolderImg})`
+}
+
+export const calendarAppImg = {
+    backgroundImage: `url(${calendarImage})`
 }

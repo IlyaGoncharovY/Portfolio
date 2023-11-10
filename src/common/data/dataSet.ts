@@ -1,7 +1,7 @@
 import {
     calendarAppImg,
     cardImage,
-    chatImg,
+    chatImg, coffeeAppImg,
     github1,
     JSONLogo1,
     linkedin1,
@@ -42,7 +42,7 @@ export const Projects: ProjectsType[] = [
     },
     {
         title: "Learn card",
-        description: "working with maps for training, in any field",
+        description: "flashcards for training",
         url: "https://ilyagoncharovy.github.io/fridays-project/",
         style: cardImage
     },
@@ -69,6 +69,12 @@ export const Projects: ProjectsType[] = [
         description: "calendar for tasks",
         url: "https://github.com/IlyaGoncharovY/calendar-app",
         style: calendarAppImg
+    },
+    {
+        title: "Coffee-app",
+        description: "React Native",
+        url: "https://github.com/IlyaGoncharovY/CoffeeApp",
+        style: coffeeAppImg
     }
 ]
 

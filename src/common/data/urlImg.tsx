@@ -1,12 +1,13 @@
+import chat from "../../assects/image/chat.png";
+import github from "../../assects/image/github.png";
 import todoImg from "../../assects/image/todoImg.png";
 import cardImg from "../../assects/image/cardImg.png";
-import socialImage from "../../assects/image/social1.png";
-import chat from "../../assects/image/chat.png";
-import telegram from "../../assects/image/telegram111.png";
-import github from "../../assects/image/github.png";
 import linkedin from "../../assects/image/linkedin1.png";
-import JSONPlaseHolderImg from "../../assects/image/JSONLogo.png"
-import calendarImage from "../../assects/image/calendarImg.png"
+import socialImage from "../../assects/image/social1.png";
+import telegram from "../../assects/image/telegram111.png";
+import calendarImage from "../../assects/image/calendarImg.png";
+import JSONPlaseHolderImg from "../../assects/image/JSONLogo.png";
+import coffeeImg from "../../assects/image/coffee.png";
 
 export const todolistImg = {
     backgroundImage: `url(${todoImg})`
@@ -42,4 +43,8 @@ export const JSONLogo1 = {
 
 export const calendarAppImg = {
     backgroundImage: `url(${calendarImage})`
+}
+
+export const coffeeAppImg = {
+    backgroundImage: `url(${coffeeImg})`
 }

@@ -4,7 +4,7 @@ import {
     chatImg, coffeeAppImg,
     github1,
     JSONLogo1,
-    linkedin1,
+    linkedin1, planetImage,
     social,
     telegram1,
     todolistImg
@@ -75,6 +75,12 @@ export const Projects: ProjectsType[] = [
         description: "React Native",
         url: "https://github.com/IlyaGoncharovY/CoffeeApp",
         style: coffeeAppImg
+    },
+    {
+        title: "Countries-wiki",
+        description: "React Native",
+        url: "https://github.com/IlyaGoncharovY/CountriesProject",
+        style: planetImage
     }
 ]
 
